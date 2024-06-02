@@ -1,0 +1,107 @@
+
+.homeImgs {
+    height: calc(65vh / 3);
+    border-radius: 15px;
+}
+.parent{
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #0a58ca33;
+    position: absolute;
+    bottom: 100px;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0); /* Background color with transparency */
+    padding: 10px;
+    border-radius: 5px;
+  }
+.overlay h1{
+    margin-top: 100px;
+    font-size: 60px;
+    color: #333233;
+}
+h1 span{
+    font-size: 80px;
+    color: #731873;
+}
+.subtitle{
+    font-size: 35px;
+    color: #333233;
+}
+.imgContainer{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+
+}
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.firstTitle{
+    font-size: 70px;
+    color: #731873;
+}
+
+.parentCard .parentPoster img{
+    width: 75%;
+    height: 200px;
+    transition: 0.5s;
+    /* border-radius: 75px; */
+}
+.parentCard{
+    position: relative;
+    /* border-radius: 40px; */
+    /* box-shadow: 0 15px, 35px, rgba(0, 0, 0, 0.25); */
+    overflow: hidden;
+}
+.parentCard .parentPoster::before {
+    content: " ";
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    bottom: -150px;
+    transition: 0.5s;
+    background: linear-gradient(0deg, #178de7, 50%, transparent);
+    z-index: 1;
+    /* border-radius: 75px; */
+  }
+  .parentCard:hover .parentPoster::before {
+    bottom: 0;
+  }
+  .parentCard .parentPoster {
+    position: relative;
+  }
+  .parentCard:hover .parentPoster img {
+    filter: blur(2px);
+    transform: translateY(-1%);
+  }
+  .parentCard .detail {
+    position: absolute;
+    width: 75%;
+    bottom: -150px;
+    /* left: 0; */
+    padding: 20px;
+    z-index: 2;
+    transition: 0.5s;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .parentCard:hover .detail {
+    bottom: 50px;
+  }

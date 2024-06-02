@@ -1,0 +1,88 @@
+
+  
+  .card {
+    position: relative;
+    border-radius: 40px;
+    height: 400px;
+    box-shadow: 0 15px, 35px, rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+  
+  .card .poster::before {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -180px;
+    transition: 0.5s;
+    background: linear-gradient(0deg, #1064a6, 50%, transparent);
+    z-index: 1;
+  }
+  
+  .card:hover .poster::before {
+    bottom: 0;
+  }
+  
+  .card .poster {
+    position: relative;
+  }
+  
+  .card .poster img {
+    width: 100%;
+    transition: 0.5s;
+    height: 400px;
+  }
+  
+  .card:hover .poster img {
+    filter: blur(3px);
+    transform: translateY(-5%);
+  }
+  
+  .card .details {
+    position: absolute;
+    width: 100%;
+    bottom: -230px;
+    left: 0;
+    padding: 20px;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  
+  .card:hover .details {
+    bottom: 0px;
+  }
+  
+  .card .details h5, .card .details h4, .card .details p {
+    color: antiquewhite;
+  }
+  
+  /* .card .details h5 {
+    margin-top: 25px;
+  } */
+  
+  .card .details p {
+    margin-top: 7.5px;
+  }
+  @media(max-width:1400px){
+    .card .details{
+       bottom: -240px;
+     }
+  }
+  @media(max-width:1206px){
+    .card .details{
+       bottom: -260px;
+     }
+  }
+  @media(max-width:760px){
+    .card .details{
+       bottom: -225px;
+     }
+  }
+  @media(max-width:577px){
+    .card .details{
+       bottom: -190px;
+     }
+  }
+  .heart:hover , .cart:hover{
+    cursor: pointer;
+  }

@@ -1,0 +1,37 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    list-style: none;
+}
+ul li span{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    border: 2px solid #c6a57b;
+    border-radius: 5px; /* Add rounded corners */
+    padding: 5px 10px; /* Add padding */
+    background-color: #001e3f; /* Change background color */
+}
+ul li span:hover{
+    cursor: pointer;
+}
+.active {
+    color: white; /* Change text color */
+    background-color: #007bff; /* Change background color */
+    padding: 5px 10px; /* Add padding */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .active:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }

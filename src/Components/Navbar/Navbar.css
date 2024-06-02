@@ -1,0 +1,59 @@
+nav{
+  background-color: #6D88B0;
+}
+.loginButton{
+  background-color:#b79461;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+.loginButton:hover{
+  background-color: #7e6642;
+}
+.navbar-toggler{
+  border: none;
+  font-size: 1.5rem;
+}
+.navbar-toggler:focus , .btn-close:focus{
+  outline: none;
+  box-shadow: none;
+}
+.nav-link{
+  color: #666777;
+  font-weight: 900px;
+  position: relative;
+  font-size: 25px;
+}
+.nav-link:hover , .nav-link.active{
+  color: #000;
+}
+@media(min-width:995px){.nav-link::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 0%;
+  background-color: #eab059;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.nav-link:hover:before , .nav-link.active:before{
+  visibility: visible;
+  width: 100%;
+}}
+
+.main{
+  padding: .5rem;
+}
+.fixedmodified{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
